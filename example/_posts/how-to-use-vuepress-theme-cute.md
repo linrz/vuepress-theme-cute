@@ -12,13 +12,13 @@ author: linrz
 > 依赖 vuepress@1.0.0-alpha.30 及其以上版本。
 
 ``` shell
-$ npm install vuepress-theme-plain
+$ npm install vuepress-theme-cute
 ```
 
-vuepress-theme-plain 提供的配置项在`.vuepress/config.js` 配置中如下：
+vuepress-theme-cute 提供的配置项在`.vuepress/config.js` 配置中如下：
 ```js
 module.exports = {
-  theme: 'plain',
+  theme: 'cute',
   themeConfig: {
     home: 'linrz.me',
     nav: {

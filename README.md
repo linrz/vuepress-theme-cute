@@ -1,5 +1,5 @@
 # vuepress-theme-plain
-> A plain cute for vuepress.
+> A cute for vuepress.
 
 ## Usage
 ```shell
