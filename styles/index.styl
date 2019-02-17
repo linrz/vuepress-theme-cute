@@ -1,0 +1,57 @@
+@import './highlight.styl'
+
+body
+  font-family: "PingFang SC", "Helvetica Neue", Arial, sans-serif
+
+div, body
+  margin: 0;
+  padding: 0;
+
+a
+  text-decoration: none
+  color: #0366d6
+
+.cute-container
+  margin: 0 auto
+  padding: 0 15px
+  clear: both
+
+.cute-page-markdown
+  a.header-anchor
+    float: left
+    margin-left: -20px
+    margin-top: 3px
+    font-size: 22px
+    line-height: 1.25
+    opacity: 0
+    color: #38f
+    &:hover
+      text-decoration: none
+
+  h1, h2, h3, h4, h5, h6 
+      &:hover .header-anchor 
+        opacity: 1
+
+.cute-content
+  margin: 0 auto
+  padding: 0 15px
+  clear: both
+
+
+@media (min-width: 768px)
+  .cute-container 
+    width: 750px
+  .cute-content
+    width: 80%
+
+@media (min-width: 992px)
+  .cute-container 
+    width: 970px
+  .cute-content
+    width: 66%
+
+@media (min-width: 1200px)
+  .cute-container 
+    width: 1170px
+  .cute-content
+    width: 50%
