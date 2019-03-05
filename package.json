@@ -1,6 +1,6 @@
 {
   "name": "vuepress-theme-cute",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -10,6 +10,7 @@
   "dependencies": {
     "@vuepress/plugin-blog": "^1.0.0-alpha.30",
     "@vuepress/plugin-pagination": "^1.0.0-alpha.30",
+    "@vuepress/plugin-pwa": "^1.0.0-alpha.42",
     "date-fns": "^1.30.1"
   },
   "devDependencies": {

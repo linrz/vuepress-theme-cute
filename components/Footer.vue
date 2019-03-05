@@ -12,7 +12,7 @@
   margin-top: 50px
   
 .cute-footer-hills
-  background: url('http://pmwi2c40m.bkt.clouddn.com/hills.svg') 0px 80px repeat-x
+  background: url('http://img.lastwhisper.club/hills.svg') 0px 80px repeat-x
   background-size: 859px 75px
   height: 255px
 
@@ -24,4 +24,8 @@
     background-size: 428px 40px
     background-position: 0 30px
     height: 100px
+
+@media (min-width: 1490px)
+  .cute-footer-hills
+    background-position: 10px 80px;
 </style>

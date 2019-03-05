@@ -11,7 +11,10 @@ module.exports = {
           text: 'Laboratory',
           link: '/laboratory.html'
         }
-      ]
+      ],
+      copyright: {
+        name: 'Example'
+      }
     },
     
   }
