@@ -109,11 +109,11 @@ export default {
   left: 0px
         
 .cute-index-hills
-  background: transparent url('http://img.lastwhisper.club/hills.svg') 0px 80px repeat-x
+  background: transparent url('http://img.lastwhisper.cn/hills.svg') 0px 80px repeat-x
   background-size: 859px 75px
 
 .cute-index-clouds
-  background: transparent url('http://img.lastwhisper.club/clouds.svg') 0px 100px repeat-x;
+  background: transparent url('http://img.lastwhisper.cn/clouds.svg') 0px 100px repeat-x;
   background-size: 944px 61px
 
 @media (max-width: 500px)
