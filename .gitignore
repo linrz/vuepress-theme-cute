@@ -3,3 +3,4 @@ example/.temp
 example/.dist
 example/.vuepress/dist
 package-lock.json
+.npmrc
