@@ -13,6 +13,7 @@
       <div class="cute-page-markdown">
         <Content slot="default" class="markdown-body"/>
       </div>
+      <Share />
     </div>
     <Footer />
   </div>
@@ -23,12 +24,14 @@ import Vue from 'vue';
 import { format } from 'date-fns'
 import Nav from '../components/nav';
 import Footer from '../components/footer';
+import Share from '../components/share';
 import '../styles/markdown.css';
 
 export default {
   components: {
     Nav,
-    Footer
+    Footer,
+    Share
   },
 
   methods: {

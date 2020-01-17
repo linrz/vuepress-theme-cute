@@ -14,7 +14,8 @@ module.exports = {
       ],
       copyright: {
         name: 'Example'
-      }
+      },
+      sharePlatforms: ['weibo', 'wechat', 'download']
     },
     
   }

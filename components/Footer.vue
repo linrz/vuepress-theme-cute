@@ -8,8 +8,6 @@
 </template>
 
 <style lang="stylus">
-.cute-footer
-  margin-top: 50px
   
 .cute-footer-hills
   background: url('http://img.lastwhisper.cn/hills.svg') 0px 80px repeat-x

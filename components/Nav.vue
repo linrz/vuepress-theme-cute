@@ -7,11 +7,14 @@
       <div :class="`cute-nav-item ${index === activeIndex ? 'cute-nav-active' : ''}`" v-for="(item, index) in $site.themeConfig.nav" :key="item.link">
         <a v-if="item.link" :href="`${item.link}`">{{ item.text }}</a>
       </div>
+      <div @click="exportImage">导出</div>
     </div>
   </div>
 </template>
 
 <script>
+import html2canvas from 'html2canvas';
+
 export default {
   data() {
     return {
@@ -34,6 +37,26 @@ export default {
           }
         }
       }
+    },
+
+    exportImage() {
+      html2canvas(document.body).then(function(canvas) {
+        canvas.id = 'test'
+        document.body.appendChild(canvas);
+        const target = document.getElementById('test');
+        const image = new Image();
+        image.onload = () => {
+          image.src = canvas.toDataURL('image/png')
+          document.body.appendChild(dataImg)
+        }
+        const downloadLink = document.createElement('a');
+        downloadLink.download = 'test';
+        downloadLink.href = canvas.toDataURL('image/png');
+        downloadLink.dataset.downloadurl = ['image/png', downloadLink.download, downloadLink.href].join(':');
+
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+      });
     }
   }
 }
