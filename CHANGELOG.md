@@ -1,3 +1,6 @@
+# 2.0.0
+[Internal] add vuepress ecosystem plugins resolutions.
+
 # 0.0.8
 [Hotfix] move `html2canvas` to mounted lifecycle for vuepress build successfully.
 
