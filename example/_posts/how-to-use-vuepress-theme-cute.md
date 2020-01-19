@@ -9,7 +9,7 @@ author: linrz
 
 ## 使用 vuepress-theme-cute
 
-> 依赖 vuepress@1.0.0-alpha.30 及其以上版本。
+vuepress-theme-cute 是一个博客主题，追求极简风格，功能最小可用。
 
 ``` shell
 $ npm install vuepress-theme-cute
@@ -21,22 +21,17 @@ module.exports = {
   theme: 'cute',
   themeConfig: {
     home: 'linrz.me',
-    nav: {
-      categories: [
-        {
-          text: 'Home',
-          link: '/'
-        },
-        {
-          text: 'About',
-          link: '/about'
-        },
-        {
-          text: 'About',
-          link: '/about.html'
-        }
-      ]
-    }
+    nav: [
+      {
+        text: 'Home',
+        link: '/'
+      },
+      {
+        text: 'About',
+        link: '/about'
+      }
+    ],
+    sharePlatforms: ['weibo', 'twitter', 'wechat', 'download']
   }
 }
 ```

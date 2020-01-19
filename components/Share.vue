@@ -21,7 +21,6 @@
 </template>
 
 <script>
-import html2canvas from 'html2canvas';
 import QrcodeVue from 'qrcode.vue';
 import Overlay from 'vant/lib/Overlay';
 import 'vant/lib/overlay/index.css';
@@ -37,6 +36,10 @@ export default {
       showQrcode: false,
       qrcode: ''
     }
+  },
+
+  mounted() {  
+    import('html2canvas').then(html2canvas => this.html2canvas = html2canvas);
   },
 
   methods: {
@@ -57,7 +60,7 @@ export default {
       }
 
       if (platform === 'download') {
-        html2canvas(document.body, {
+        this.html2canvas(document.body, {
           windowWidth: 375,
           width: 375,
           ignoreElements: ele => typeof ele.className === 'string' && (ele.className.indexOf('cute-nav') > -1 || ele.className.indexOf('cute-share') > -1)

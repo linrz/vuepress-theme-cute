@@ -1,15 +1,11 @@
 module.exports = {
     theme: require.resolve('../..'),
     themeConfig: {
-      home: 'Linrz',
+      home: 'vuepress-theme-cute',
       nav: [
         {
-          text: 'About',
+          text: 'about',
           link: '/about.html'
-        },
-        {
-          text: 'Laboratory',
-          link: '/laboratory.html'
         }
       ],
       copyright: {
