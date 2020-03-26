@@ -60,25 +60,22 @@ export default {
       }
 
       if (platform === 'download') {
-        this.html2canvas(document.body, {
+        this.html2canvas.default(document.body, {
           windowWidth: 375,
           width: 375,
+          useCORS: true,
           ignoreElements: ele => typeof ele.className === 'string' && (ele.className.indexOf('cute-nav') > -1 || ele.className.indexOf('cute-share') > -1)
-          }).then((canvas) => {
+        }).then((canvas) => {
           canvas.id = 'download'
-          document.body.appendChild(canvas);        
-          
-          const image = new Image();
-          image.onload = () => {
-            image.src = canvas.toDataURL('image/png')
-            document.body.appendChild(image)
-          }
-          const downloadLink = document.createElement('a');
-          downloadLink.download = document.title;
-          downloadLink.href = canvas.toDataURL('image/png');
-          downloadLink.dataset.downloadurl = ['image/png', downloadLink.download, downloadLink.href].join(':');
-          document.body.appendChild(downloadLink);
-          downloadLink.click();
+          canvas.toBlob((blob) => {
+            const downloadLink = document.createElement('a');
+            downloadLink.download = document.title;
+            downloadLink.href = URL.createObjectURL(blob)
+            downloadLink.dataset.downloadurl = ['image/png', downloadLink.download, downloadLink.href].join(':');
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            document.body.removeChild(downloadLink);
+          },'image/png', 1);
         });
       }
     },
