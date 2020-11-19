@@ -22,7 +22,7 @@
 
 <script>
 import QrcodeVue from 'qrcode.vue';
-import Overlay from 'vant/lib/Overlay';
+import { Overlay } from 'vant';
 import 'vant/lib/overlay/index.css';
 
 export default {

@@ -13,6 +13,7 @@
 
 <script>
 export default {
+  name: 'CuteNav',
   data() {
     return {
       activeIndex: 0,

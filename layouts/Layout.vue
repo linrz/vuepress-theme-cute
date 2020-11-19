@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Nav />
+    <CuteNav />
     <div class="cute-container">
       <div class="cute-list-item" v-for="(item, index) in $pagination.posts" :key="index">
         <router-link :to="item.path">
@@ -31,15 +31,14 @@
 <script>
 import Vue from 'vue';
 import { format } from 'date-fns'
-import Nav from '../components/nav';
-import Pagination from '../components/pagination';
+import CuteNav from '../components/CuteNav.vue'
+import Pagination from '../components/Pagination.vue'
 
 export default {
   components: {
-    Nav,
+    CuteNav,
     Pagination
   },
-
   mounted() {
     this.startAnimation();
   },
@@ -109,11 +108,11 @@ export default {
   left: 0px
         
 .cute-index-hills
-  background: transparent url('http://img.lastwhisper.cn/hills.svg') 0px 80px repeat-x
+  background: transparent url('https://img.lastwhisper.cn/hills.svg') 0px 80px repeat-x
   background-size: 859px 75px
 
 .cute-index-clouds
-  background: transparent url('http://img.lastwhisper.cn/clouds.svg') 0px 100px repeat-x;
+  background: transparent url('https://img.lastwhisper.cn/clouds.svg') 0px 100px repeat-x;
   background-size: 944px 61px
 
 @media (max-width: 500px)

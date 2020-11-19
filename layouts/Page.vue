@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Nav />
+    <CuteNav />
     <div class="cute-content">
       <div class="cute-page-header">
         <div class="cute-page-title">{{ $page.frontmatter.title }}</div>
@@ -22,18 +22,17 @@
 <script>
 import Vue from 'vue';
 import { format } from 'date-fns'
-import Nav from '../components/nav';
-import Footer from '../components/footer';
-import Share from '../components/share';
+import CuteNav from '../components/CuteNav.vue'
+import Footer from '../components/Footer.vue'
+import Share from '../components/Share.vue'
 import '../styles/markdown.css';
 
 export default {
   components: {
-    Nav,
+    CuteNav,
     Footer,
     Share
   },
-
   methods: {
     formatPostTime(date) {
       return format(date, 'MM/DD YYYY');

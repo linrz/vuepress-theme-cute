@@ -10,7 +10,7 @@
 <style lang="stylus">
   
 .cute-footer-hills
-  background: url('http://img.lastwhisper.cn/hills.svg') 0px 80px repeat-x
+  background: url('https://img.lastwhisper.cn/hills.svg') 0px 80px repeat-x
   background-size: 859px 75px
   height: 255px
 
